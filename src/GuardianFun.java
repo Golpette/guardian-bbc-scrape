@@ -23,11 +23,7 @@ public class GuardianFun {
 			visitedURLs.add(  nextURL  );
 
 			// Fetch it's main article body, without html tags			
-			//String mainBody = GetMainText.getBody(  nextURL  );
 			String mainBody = GetMainText.getBody(  nextURL  );
-			
-			//System.out.println( mainBody );
-			
 		
 			// Take article, and tally up occurrences of words, ignoring
 			// capitals, punctuation,... [ this needs finalised ]
@@ -35,11 +31,10 @@ public class GuardianFun {
 			singleList = WordAnalyser.analyseArticle(  mainBody  );
 
 			
-			//   NOTE  there is a problem with getting main body from pages containing a video above article
+			// Was helpful for debugging... 
 			out2.println( nextURL + " singleList.size()="+  singleList.size() + " mainBody.length()=" + mainBody.length()  );
 
-
-			// Take this list, and add it to ULTIMATE list
+			// Take this list, and add it to allWords list
 			for( int w=0; w<singleList.size(); w++ ){
 
 				String wrd = singleList.get(w).getWord();
@@ -61,7 +56,7 @@ public class GuardianFun {
 		}// end for pages
 
 		
-		//Sort list (lowest to highest)	
+		//Sort list (lowest to highest occurrences)	
 		allWords = sortWordList( allWords );
 		
 		
@@ -77,6 +72,7 @@ public class GuardianFun {
 		
 		
 		// Get data for plot of number of words with x occurrences vs occurrences
+		// Can plot this file in new plot (see README.md)
 		PrintWriter out3 = new PrintWriter(new FileWriter("plotData.dat"));
 		int maxOccurrences = allWords.get( allWords.size()-1 ).getOccurrences();
 		int[] numOfWords = new int[ maxOccurrences+1 ];
