@@ -15,7 +15,7 @@ f(x) = a*x**b;
 b = -1;  
 a = 1000;  
 fit f(x) 'plotData' via a,b;  
-plot 'plotData.dat' with points title 'Plot title', \
+plot 'plotData.dat' with points title 'Plot title', \  
      f(x) with lines title sprintf('power fit curve f(x) = %.2f·x^{%.2f}', a, b)
      
      
