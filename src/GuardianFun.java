@@ -24,7 +24,7 @@ public class GuardianFun {
 
 			// Fetch it's main article body, without html tags			
 			//String mainBody = GetMainText.getBody(  nextURL  );
-			String mainBody = GetMainText_2.getBody(  nextURL  );
+			String mainBody = GetMainText.getBody(  nextURL  );
 			
 			//System.out.println( mainBody );
 			
@@ -32,7 +32,7 @@ public class GuardianFun {
 			// Take article, and tally up occurrences of words, ignoring
 			// capitals, punctuation,... [ this needs finalised ]
 			ArrayList<Word> singleList = new ArrayList<Word>();
-			singleList = WordAnalyser_2.analyseArticle(  mainBody  );
+			singleList = WordAnalyser.analyseArticle(  mainBody  );
 
 			
 			//   NOTE  there is a problem with getting main body from pages containing a video above article
