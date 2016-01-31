@@ -1,5 +1,9 @@
-GuardianFun.java is main program
+**  bbc.py
+Rewrite of Guardian code. Does same thing but neater and using python. 
 
+
+
+**  GuardianFun.java is main program
 
 Q: What's all this then?  
 A: This was some code I had initially written because I wanted to know how to read webpages with java. At the same time I was listening to Michel Thomas' spanish lessons and he claimed that several years ago a study was done that showed that to understand a typical issue of the New York Times, you would only need a vocabulary of ~600 words. (Though he didn't elaborate on what exactly this meant).
