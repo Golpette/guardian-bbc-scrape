@@ -1,7 +1,8 @@
-**  bbc.py
-Rewrite of Guardian code. Does same thing but neater and using python. 
-
-
+**  bbc.py  
+Rewrite of Guardian code. Does same thing but neater and using python.  
+  
+  
+  
 
 **  GuardianFun.java is main program
 
