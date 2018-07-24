@@ -1,21 +1,23 @@
-** weinstein.py
+** weinstein.py  <br />
 Scrapes specified number of stories related to Harvey Weinstein from the Guardian website and looks at usage of "non-consensual" vs "rape". If you're interested, ~23% of articles used the euphemism without mentioning rape.
+<br />
+<br />
 
 
-
-**  bbc.py  
+**  bbc.py <br />
 Rewrite of Guardian code below. Essentially does same thing but neater and using python.  
-  
+<br />
+<br />
   
   
 
-**  GuardianFun.java is main program
+**  GuardianFun.java is main program to run in src directory
 
-Q: What's all this then?  
+Q: What's all this then?  <br />
 A: This was some code I had initially written because I wanted to know how to read webpages with java. At the same time I was listening to Michel Thomas' spanish lessons and he claimed that several years ago a study was done that showed that to understand a typical issue of the New York Times, you would only need a vocabulary of ~600 words. (Though he didn't elaborate on what exactly this meant).
 
 
-Q: What does it do?  
+Q: What does it do?  <br />
 A: The main program, "GuardianFun.java", will go to The Guardian's (British newspaper) homepage and then visit the first 100 links to stories. It will get the article body from each page and keep a tally of what words appear and how many times. It outputs this list to "Guardian_words_xx.dat" and it outputs a data file with #occurrences on x-axis and #words with this #occurences on y-axis into "plotData.dat".
 If you plot this you'll see a power law... I used gnuplot to generate the example I uploaded. These commands will let you do the same:
 
