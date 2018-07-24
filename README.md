@@ -1,5 +1,10 @@
+** weinstein.py
+Scrapes specified number of stories related to Harvey Weinstein from the Guardian website and looks at usage of "non-consensual" vs "rape". If you're interested, ~23% of articles used the euphemism without mentioning rape.
+
+
+
 **  bbc.py  
-Rewrite of Guardian code. Does same thing but neater and using python.  
+Rewrite of Guardian code below. Essentially does same thing but neater and using python.  
   
   
   
